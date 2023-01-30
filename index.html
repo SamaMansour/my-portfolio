@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel ="stylesheet" type="text/css" href="./assets/CSS/style.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<script type="text/javascript" src="./assets/JS/script.js"></script>
 	<title>Sama Mansour Portfolio</title>
 </head>
@@ -13,7 +14,7 @@
 	<nav>
 	<div class="toggle" onclick="toggleMenu();"></div>
 	<ul class="menu">
-		<li><a href="#" onclick="toggleMenu();">Dashboard</a></li>
+		<li><a href="#" onclick="toggleMenu();">Home</a></li>
 		<li><a href="#about" onclick="toggleMenu();">About</a></li>
 		<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 	</ul>
@@ -27,7 +28,7 @@
                 <h2 class= "i-name"> Sama Mansour </h2>
                 <div class= "i-title"> 
                 <div class= "i-title-wrapper">
-                    <div class= "i-title-item">Fresh Graduate</div>
+                    <div class= "i-title-item">Junior Full Stack Developer</div>
                 </div>
                 </div>
                  <div > Looking for an entry level job as a full stack developer</div>
@@ -43,9 +44,9 @@
 			<span>About Us</span>
 			<h1>Intro about me </h1>
 			<p>
-				I am a CS fresh graduate from Princess Sumaya University for
-				Technology (PSUT). <p id="dots">...</p><p id="more">
-				I am seeking an internship/entry-level job at a
+				I garduated from Princess Sumaya University for
+				Technology (PSUT) with a bachelor degree of computer science. I have one year of experience working as a full stack developer using Ruby on Rails and React<p id="dots">...</p><p id="more">
+				I am seeking an entry-level job at a
 				respectful company where I can develop and enhance my skills as a
 				software developer.
 				</p>
@@ -53,8 +54,36 @@
 			<button onclick="loadMore()" id="myBtn">Read More</button>
 		</div>
 		<!-- About Image -->
-		<div class="about-image">
-			<img src="" />
+			<img src="./assets/Images/me.jpg" alt="me" />
+	</section>
+	<hr />
+	<!-- Projects Section -->
+	<section id="about">
+		<div class="about-text">
+			<span>Projects</span>
+			<h1>NLP APP </h1>
+			<p>
+				I am a CS fresh graduate from Princess Sumaya University for
+				Technology (PSUT). 
+				I am seeking an internship/entry-level job at a
+				respectful company where I can develop and enhance my skills as a
+				software developer.
+			</p>
+
+			<h1>NLP APP </h1>
+			<p>
+				I am a CS fresh graduate from Princess Sumaya University for
+				Technology (PSUT). 
+				I am seeking an internship/entry-level job at a
+				respectful company where I can develop and enhance my skills as a
+				software developer.
+			</p>
+		</div>
+		<!-- About Image -->
+		<div>
+			<button id="prev"><</button>
+			<img id="slide-img" />
+			<button id="next">></button>
 		</div>
 	</section>
 	<hr />
@@ -83,7 +112,7 @@
 			<div class="centered">
 				<h3>E-MAIL</h3>
 				<ul>
-					<li>info@psut.edu.jo</li>
+					<li>s.jamansour@gmail.com</li>
 				</ul>
 			</div>
 			<div class="righted">
@@ -96,3 +125,28 @@
 		<br>
 </body>
 </html>
+<!-- <script>
+	var currentIndex = 1;
+	var duration = 3000;
+	var images = [
+    "./assets/Images/portal.png",
+    "./assets/Images/django.png"
+	]
+	function slideShow (){
+    let slide= document.getElementById('slide-img').src = images[currentIndex];
+		let prevButton = document.getElementById('prev');
+		let nextButton = document.getElementById('next');
+		prevButton.onclick=()=>{currentIndex--;};
+		nextButton.onclick=()=>{currentInde++;}
+
+    currentIndex++;
+
+    if (currentIndex == images.length){
+        currentIndex=0;
+    }
+    setTimeout(slideShow, duration);
+
+ }
+
+ slideShow();
+</script> -->
