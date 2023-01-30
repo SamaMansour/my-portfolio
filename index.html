@@ -16,6 +16,7 @@
 	<ul class="menu">
 		<li><a href="#" onclick="toggleMenu();">Home</a></li>
 		<li><a href="#about" onclick="toggleMenu();">About</a></li>
+		<li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
 		<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 	</ul>
 </nav>
@@ -45,7 +46,8 @@
 			<h1>Intro about me </h1>
 			<p>
 				I garduated from Princess Sumaya University for
-				Technology (PSUT) with a bachelor degree of computer science. I have one year of experience working as a full stack developer using Ruby on Rails and React<p id="dots">...</p><p id="more">
+				Technology (PSUT) with a bachelor degree of computer science. I have one year of experience working as a full stack developer using React, React-native and Ruby on Rails.
+				During my studies I built many freelancing projects using frameworks like Django, Node js and Laravel .<p id="dots">...</p><p id="more">
 				I am seeking an entry-level job at a
 				respectful company where I can develop and enhance my skills as a
 				software developer.
@@ -58,32 +60,34 @@
 	</section>
 	<hr />
 	<!-- Projects Section -->
-	<section id="about">
-		<div class="about-text">
-			<span>Projects</span>
-			<h1>NLP APP </h1>
+	<section id="projects">
+		<div class="projects-text">
+			<span>Some of My Projects</span>
+			<h3>sentiment analysis</h3>
 			<p>
-				I am a CS fresh graduate from Princess Sumaya University for
-				Technology (PSUT). 
-				I am seeking an internship/entry-level job at a
-				respectful company where I can develop and enhance my skills as a
-				software developer.
+				Django app asociated with PSUT that ffulfills graping posts from social
+				media platforms such as twitter and classify them into correct category such
+				as: happy, sad etc ...
 			</p>
 
-			<h1>NLP APP </h1>
+			<h3>Personal portfolio</h3>
 			<p>
-				I am a CS fresh graduate from Princess Sumaya University for
-				Technology (PSUT). 
-				I am seeking an internship/entry-level job at a
-				respectful company where I can develop and enhance my skills as a
-				software developer.
+				This portfolio was implemented using React js that includes a nav bar 
+				about me section and menu of project and a contact me form
+			</p>
+
+			<h3>Food Meals </h3>
+			<p>
+				This project was written using mern stack it is a basic food delivery app
+				with shopping cart.
 			</p>
 		</div>
 		<!-- About Image -->
 		<div>
-			<button id="prev"><</button>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<img id="slide-img" />
-			<button id="next">></button>
+			<span id="img-count"></span>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
 	</section>
 	<hr />
@@ -91,6 +95,11 @@
 	<section id="contact">
 		<div class="contact-heading">
 			<h1>Contact Us</h1>
+			<p>
+				If you want to get your project done<br />
+				with good quality<br />
+				and the perfect ETA
+			</p>
 			<div class="container">
 				<form action="mailto:s.jamansour@gmail.com" method="post" enctype="text/plain">
 					Name:<br>
@@ -102,11 +111,6 @@
 					<input type="submit" value="Send">
 					</form>
 			</div>
-			<p>
-				If you want to get your project done<br />
-				with good quality<br />
-				and the perfect ETA
-			</p>
 		</div>
 	 
 	</section>
@@ -127,9 +131,9 @@
 				</ul>
 			</div>
 			<div class="righted">
-				<h3>ADRESS</h3>
+				<h3>Github</h3>
 				<ul>
-					<li>Amman, Jordan</li>
+					<li>https://github.com/SamaMansour</li>
 				</ul>
 			</div>
 		</div>
@@ -143,13 +147,18 @@
     "./assets/Images/portal.png",
     "./assets/Images/django.png"
 	]
+	var imageCount = 
+	[
+		1,
+		2,
+		3
+	]
+	function plusSlides(n) {
+  slideShow(currentIndex += n);
+}
 	function slideShow (){
     let slide= document.getElementById('slide-img').src = images[currentIndex];
-		let prevButton = document.getElementById('prev');
-		let nextButton = document.getElementById('next');
-		prevButton.onclick=()=>{currentIndex--;};
-		nextButton.onclick=()=>{currentInde++;}
-
+		document.getElementById('img-count').innerHTML = imageCount[currentIndex];
     currentIndex++;
 
     if (currentIndex == images.length){

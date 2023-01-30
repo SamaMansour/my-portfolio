@@ -195,19 +195,6 @@ ul li a:hover {
 }
 
 
-
-.wrapper {
-	max-width: 450px;
-	margin: 50px auto;
-}
-
-.wrapper .search-input {
-	background: #fff;
-	width: 100%;
-	position: relative;
-	box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
-}
-
 section:hover{
 	background-color: #cfaacfe6;
 }
@@ -276,6 +263,87 @@ section:hover{
 /* Projects Section */
 
 
+#projects {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  padding: 100px;
+}
+
+.projects-text {
+	width: 500px;
+	justify-content: center;
+}
+
+.projects-text span {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.projects-text h1 {
+	font-size: 3rem;
+}
+
+.projects-text p {
+	font-size: 1rem;
+	margin: 5px 0px 15px;
+	text-align: justify;
+}
+
+.projects-text button {
+	padding: 12px 22px;
+	border: none;
+	background: #B33C86;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+}
+
+.projects-text button:hover {
+	background: #8d9194;
+}
+
+.projects-image {
+	width: 450px;
+	height: 500px;
+}
+
+.projects-image img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  bottom: 200px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
 #about {
 	width: 100%;
 	min-height: 100vh;
@@ -331,6 +399,16 @@ section:hover{
 	object-fit: contain;
 	object-position: center;
 }
+
+#img-count{
+	color: #000000;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+	right: 450px;
+}
+
 
 
 
@@ -426,7 +504,7 @@ section:hover{
 	.toggle {
 		width: 40px;
 		height: 40px;
-		background: url("../img/menu.png");
+		background: url("../Images/menu.png");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -434,7 +512,7 @@ section:hover{
 	}
 
 	.toggle.active {
-		background: url("../img/close.png");
+		background: url("../Images/close.png");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 25px;
@@ -514,7 +592,7 @@ section:hover{
 img{
 	border: 2px solid #fff;
 	box-shadow: 10px 10px 5px #ccc;
-	width: 500px;
+	width: 800px;
 	height: 500px;
 }
 
