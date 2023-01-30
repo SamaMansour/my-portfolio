@@ -522,3 +522,31 @@ img:hover{
 	opacity: 0.8;
 }
 
+input[type=text],textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box; 
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+
+input[type=submit] {
+	padding: 12px 22px;
+	border: none;
+	background: #B33C86;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background: #8d9194;
+}
+
+
