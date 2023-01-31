@@ -82,12 +82,15 @@
 				with shopping cart.
 			</p>
 		</div>
-		<!-- About Image -->
-		<div>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<img id="slide-img" />
-			<span id="img-count"></span>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- Projects Image -->
+		<div class="slideshow-container">
+			<div class="mySlides">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<img id="slide-img" />
+				<span id="img-count"></span>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
 		</div>
 	</section>
 	<hr />
@@ -102,12 +105,9 @@
 			</p>
 			<div class="container">
 				<form action="mailto:s.jamansour@gmail.com" method="post" enctype="text/plain">
-					Name:<br>
-					<input type="text" name="name"><br>
-					E-mail:<br>
-					<input type="text" name="mail"><br>
-					Comment:<br>
-					<input type="text" name="comment" size="50"><br><br>
+					<input type="text" name="name" placeholder="Name"><br>
+					<input type="text" name="mail" placeholder="E-mail"><br>
+					<input type="text" name="comment" size="50" placeholder="comment"><br><br>
 					<input type="submit" value="Send">
 					</form>
 			</div>
@@ -141,32 +141,5 @@
 </body>
 </html>
 <script>
-	var currentIndex = 1;
-	var duration = 3000;
-	var images = [
-    "./assets/Images/portal.png",
-    "./assets/Images/django.png"
-	]
-	var imageCount = 
-	[
-		1,
-		2,
-		3
-	]
-	function plusSlides(n) {
-  slideShow(currentIndex += n);
-}
-	function slideShow (){
-    let slide= document.getElementById('slide-img').src = images[currentIndex];
-		document.getElementById('img-count').innerHTML = imageCount[currentIndex];
-    currentIndex++;
-
-    if (currentIndex == images.length){
-        currentIndex=0;
-    }
-    setTimeout(slideShow, duration);
-
- }
-
- slideShow();
+	
 </script>

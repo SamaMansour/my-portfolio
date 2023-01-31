@@ -1,10 +1,16 @@
-var currentIndex = 0;
-var duration = 3000;
-var images = [
-    "../assets/Images/portal.png",
-    "../assets/Images/django.png"
-]
-
+var currentIndex = 1;
+  var duration = 3000;
+  var images = [
+  "./assets/Images/portal.png",
+  "./assets/Images/portfolio.png",
+  "./assets/Images/foodi.png"
+  ]
+  var imageCount = 
+  [
+	  1,
+	  2,
+	  3
+  ]
 window.addEventListener("scroll", function () {
 	var nav = document.querySelector("nav");
 	nav.classList.toggle("sticky", window.scrollY > 0);
@@ -35,19 +41,24 @@ function toggleMenu() {
 		}
   }
 
- // projects slideshow
- slideShow();
-
- function slideShow (){
-	let slide= document.getElementById('slide-img').src = images[currentIndex];
-
-	currentIndex++;
-
-	if (currentIndex == images.length){
-			currentIndex=0;
+  
+function plusSlides(n) {
+	if (currentIndex< images.length -1){
+		slideShow(currentIndex += n);
 	}
-	setTimeout(slideShow, duration);
+}
+  function slideShow (){
+  let slide= document.getElementById('slide-img').src = images[currentIndex];
+	  document.getElementById('img-count').innerHTML = imageCount[currentIndex];
+  currentIndex++;
 
- }
+  if (currentIndex == images.length){
+	  currentIndex=0;
+  }
+  setTimeout(slideShow, duration);
+
+}
+
+slideShow();
 
  
