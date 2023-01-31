@@ -1,121 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel ="stylesheet" type="text/css" href="./assets/CSS/style.css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="./assets/JS/script.js"></script>
-	<title>Sama Mansour Portfolio</title>
-</head>
-<body>
-	<nav>
-	<div class="toggle" onclick="toggleMenu();"></div>
-	<ul class="menu">
-		<li><a href="#" onclick="toggleMenu();">Home</a></li>
-		<li><a href="#about" onclick="toggleMenu();">About</a></li>
-		<li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-		<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-	</ul>
-</nav>
-	<section id="main">
-		<div class="main-content">
-			<div class= "i">
-        <div class= "i-left">
-            <div class= "i-left-wrapper">
-                <h2 class= "i-intro"> Hello, My name is</h2>
-                <h2 class= "i-name"> Sama Mansour </h2>
-                <div class= "i-title"> 
-                <div class= "i-title-wrapper">
-                    <div class= "i-title-item">Junior Full Stack Developer</div>
-                </div>
-                </div>
-                 <div > Looking for an entry level job as a full stack developer</div>
-            </div>
-        </div>
-    </div>
-		</div>
-	</section>
-	<hr />
-	<!-- About Section -->
-	<section id="about">
-		<div class="about-text">
-			<span>About Us</span>
-			<h1>Intro about me </h1>
-			<p>
-				I garduated from Princess Sumaya University for
-				Technology (PSUT) with a bachelor degree of computer science. I have one year of experience working as a full stack developer using React, React-native and Ruby on Rails.
-				During my studies I built many freelancing projects using frameworks like Django, Node js and Laravel .<p id="dots">...</p><p id="more">
-				I am seeking an entry-level job at a
-				respectful company where I can develop and enhance my skills as a
-				software developer.
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel ="stylesheet" type="text/css" href="./assets/CSS/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="./assets/JS/script.js"></script>
+		<title>Sama Mansour Portfolio</title>
+	</head>
+	<body>
+		<nav>
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="menu">
+				<li><a href="#" onclick="toggleMenu();">Home</a></li>
+				<li><a href="#about" onclick="toggleMenu();">About</a></li>
+				<li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+			</ul>
+		</nav>
+		<section id="main">
+			<div class="main-content">
+				<div class= "i">
+					<div class= "i-left">
+							<div class= "i-left-wrapper">
+									<h2 class= "i-intro"> Hello, My name is</h2>
+									<h2 class= "i-name"> Sama Mansour </h2>
+									<div class= "i-title"> 
+									<div class= "i-title-wrapper">
+											<div class= "i-title-item">Junior Full Stack Developer</div>
+									</div>
+									</div>
+									<div > Looking for an entry level job as a full stack developer</div>
+							</div>
+					</div>
+			</div>
+		</section>
+		<hr />
+		<!-- About Section -->
+		<section id="about">
+			<div class="about-text">
+				<span>About Us</span>
+				<h1>Intro about me </h1>
+				<p>
+					I garduated from Princess Sumaya University for
+					Technology (PSUT) with a bachelor degree of computer science. I have one year of experience working as a full stack developer using React, React-native and Ruby on Rails.
+					During my studies I built many freelancing projects using frameworks like Django, Node js and Laravel .<p id="dots">...</p><p id="more">
+					I am seeking an entry-level job at a
+					respectful company where I can develop and enhance my skills as a
+					software developer.
+					</p>
 				</p>
-			</p>
-			<button onclick="loadMore()" id="myBtn">Read More</button>
-		</div>
-		<!-- About Image -->
-			<img src="./assets/Images/me.jpg" alt="me" />
-	</section>
-	<hr />
-	<!-- Projects Section -->
-	<section id="projects">
-		<div class="projects-text">
-			<span>Some of My Projects</span>
-
-			<h3>sentiment analysis</h3>
-			<p>
-				Django app associated with PSUT that fulfills graping posts from social media platforms 
-				such as twitter and classify them into correct category such as: happy, sad etc ...
-			</p>
-
-			<h3>Personal portfolio</h3>
-			<p>
-				This portfolio was implemented using React js that includes a nav bar,
-				about me section, menu of projects and a contact me form
-			</p>
-
-			<h3>Food Meals </h3>
-			<p>
-				This project was written using mern stack it is a basic food delivery app
-				with shopping cart.
-			</p>
-		</div>
-		<!-- Projects Image -->
-		<div class="slideshow-container">
-			<div class="mySlides">
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<img id="slide-img" />
-				<span id="img-count"></span>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<button onclick="loadMore()" id="myBtn">Read More</button>
 			</div>
-		</div>
-		</div>
-	</section>
-	<hr />
-	<!-- Contact us Section -->
-	<section id="contact">
-		<div class="contact-heading">
-			<h1>Contact Us</h1>
-			<p>
-				If you want to get your project done<br />
-				with good quality<br />
-				and the perfect ETA
-			</p>
-			<div class="container">
-				<form action="mailto:s.jamansour@gmail.com" method="post" enctype="text/plain">
-					<input type="text" name="name" placeholder="Name"><br>
-					<input type="text" name="mail" placeholder="E-mail"><br>
-					<input type="text" name="comment" size="50" placeholder="comment"><br><br>
-					<input type="submit" value="Send">
+			<!-- About Image -->
+				<img src="./assets/Images/me.jpg" alt="me" />
+		</section>
+		<hr />
+		<!-- Projects Section -->
+		<section id="projects">
+			<div class="projects-text">
+				<span>Some of My Projects</span>
+
+				<h3>sentiment analysis</h3>
+				<p>
+					Django app associated with PSUT that fulfills graping posts from social media platforms 
+					such as twitter and classify them into correct category such as: happy, sad etc ...
+				</p>
+
+				<h3>Personal portfolio</h3>
+				<p>
+					This portfolio was implemented using React js that includes a nav bar,
+					about me section, menu of projects and a contact me form
+				</p>
+
+				<h3>Food Meals </h3>
+				<p>
+					This project was written using mern stack it is a basic food delivery app
+					with shopping cart.
+				</p>
+			</div>
+			<!-- Projects Image -->
+			<div class="slideshow-container">
+				<div class="mySlides">
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<img id="slide-img" />
+					<span id="img-count"></span>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<!-- Contact us Section -->
+		<section id="contact">
+			<div class="contact-heading">
+				<h1>Contact Us</h1>
+				<p>
+					If you want to get your project done<br />
+					with good quality<br />
+					and the perfect ETA
+				</p>
+				<div class="container">
+					<form action="mailto:s.jamansour@gmail.com" method="post" enctype="text/plain">
+						<input type="text" name="name" placeholder="Name"><br>
+						<input type="text" name="mail" placeholder="E-mail"><br>
+						<input type="text" name="comment" size="50" placeholder="comment"><br><br>
+						<input type="submit" value="Send">
 					</form>
+				</div>
 			</div>
-		</div>
-	</section>
-	<br>
-	 <!--Adress-->
-	 
-	 <div  class="row table-position">
+		</section>
+		<br>
+		<!--Adress-->
+		<div  class="row table-position">
 			<div class="lefted">
 				<h3>PHONE</h3>
 				<ul>
@@ -136,8 +133,5 @@
 			</div>
 		</div>
 		<br>
-</body>
+	</body>
 </html>
-<script>
-	
-</script>
