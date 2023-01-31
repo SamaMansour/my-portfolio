@@ -53,8 +53,10 @@
 				</p>
 				<button onclick="loadMore()" id="myBtn">Read More</button>
 			</div>
-			<!-- About Image -->
+			<div class="about-image">
 				<img src="./assets/Images/me.jpg" alt="me" />
+			</div>
+			<!-- About Image -->
 		</section>
 		<hr />
 		<!-- Projects Section -->
@@ -81,13 +83,13 @@
 				</p>
 			</div>
 			<!-- Projects Image -->
-			<div class="slideshow-container">
-				<div class="mySlides">
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<div id="slides">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<div class="slides-image">
 					<img id="slide-img" />
 					<span id="img-count"></span>
-					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 		</section>
 		<hr />
