@@ -391,7 +391,7 @@ section:hover{
 }
 
 
-/*Adress*/
+/*Github*/
 .table-position{
 	margin-left: 21%;
    
@@ -558,6 +558,14 @@ section:hover{
 	
 }
 
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+		 font-size: 11px;
+	}
+}
+/* image effects*/
 img{
 	border: 2px solid #fff;
 	box-shadow: 10px 10px 5px #ccc;
@@ -569,6 +577,7 @@ img:hover{
 	opacity: 0.8;
 }
 
+/* contact form */
 input[type=text],textarea {
 	width: 100%; 
 	padding: 12px; 
