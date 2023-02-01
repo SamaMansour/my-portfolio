@@ -1,4 +1,4 @@
-var currentIndex = 1;
+var currentIndex = 0 ;
 var duration = 3000;
 
 var images = [
@@ -56,7 +56,7 @@ function slideShow (){
 	currentIndex++;
 
 	if (currentIndex == images.length){
-		currentIndex=0;
+		currentIndex= 0;
 	}
 	setTimeout(slideShow, duration);
 
