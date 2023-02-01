@@ -64,8 +64,7 @@ function slideShow (){
 
 slideShow(); 
 
-function clearForm(e){
-	e.preventDefault();
+function clearForm(){
 	var name = document.getElementById("name");
 	var email = document.getElementById("email");
 	var comment = document.getElementById("comment");
