@@ -64,19 +64,25 @@ function slideShow (){
 
 slideShow(); 
 
+function clearForm(e){
+	e.preventDefault();
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var comment = document.getElementById("comment");
+	name.value= '';
+	email.value= '';
+	comment.value= '';
 
-function clearForm(){
-	form= document.getElementById("contact-us");
-	form.reset();
 }
 
-// function checkEmailDomain(){
-// 	let domain = ".*\.com$";
-// 	var email = document.getElementById("email").value;
-// 	if(email.match(domain)){
-// 		alert("E-mail must end with .com");
-// 	}
 
-// }
+function checkEmailDomain(){
+	let domain = ".*\.com$";
+	var email = document.getElementById("email").value;
+	if(!email.match(domain)){
+		alert("E-mail must end with .com");
+	}
+	
+}
 
- 
+;
