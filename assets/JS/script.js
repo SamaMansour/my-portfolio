@@ -62,6 +62,21 @@ function slideShow (){
 
 }
 
-slideShow();
+slideShow(); 
+
+
+function clearForm(){
+	form= document.getElementById("contact-us");
+	form.reset();
+}
+
+// function checkEmailDomain(){
+// 	let domain = ".*\.com$";
+// 	var email = document.getElementById("email").value;
+// 	if(email.match(domain)){
+// 		alert("E-mail must end with .com");
+// 	}
+
+// }
 
  
