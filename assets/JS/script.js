@@ -1,4 +1,4 @@
-var currentIndex = 0 ;
+var currentIndex = 1 ;
 var duration = 3000;
 
 var images = [
