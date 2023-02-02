@@ -62,7 +62,9 @@ function slideShow (){
 
 }
 
-slideShow(); 
+window.addEventListener("load", (event) => {
+    slideShow(); 
+});
 
 function clearForm(){
 	var name = document.getElementById("name");
