@@ -63,7 +63,7 @@ function slideShow (){
 }
 
 window.addEventListener("load", (event) => {
-    slideShow(); 
+  slideShow(); 
 });
 
 function clearForm(){
