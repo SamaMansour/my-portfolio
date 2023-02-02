@@ -15,6 +15,14 @@ h2 h1 h3 {
 	font-family: 'Poppins';
 }
 
+section{
+	padding-top: 5%;
+}
+
+p{
+	line-height: 30px;
+}
+
 /* Main Section */
 #main {
 	position: relative;
@@ -65,7 +73,7 @@ ul {
 }
 
 ul li a {
-	color: #000000;
+	color: #fff;
 	padding: 10px 22px;
 	text-transform: uppercase;
 }
@@ -212,11 +220,14 @@ section:hover{
 	align-items: center;
 	justify-content: space-between;
   padding: 100px;
+	float: left;
 }
 
 .about-text {
-	width: 500px;
+	width: 50%;
 	justify-content: center;
+	float:left;
+	margin-bottom: 5%;
 }
 
 .about-text span {
@@ -250,15 +261,17 @@ section:hover{
 }
 
 .about-image {
-	width: 450px;
+  width: 450px;
 	height: 500px;
+	margin-left: 200px;
 }
 
 .about-image img {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	object-fit: contain;
 	object-position: center;
+	border: #fff 2px solid;
 }
 
 #more {
@@ -275,11 +288,16 @@ section:hover{
 	align-items: center;
 	justify-content: space-between;
   padding: 100px;
+	float: left;
 }
 
 .projects-text {
-	width: 500px;
+	width: 50%;
 	justify-content: center;
+	margin-bottom: 5%;
+}
+#projects-internal-text{
+	margin-top: 2%;
 }
 
 .projects-text span {
@@ -313,7 +331,7 @@ section:hover{
 }
 
 .projects-image {
-	width: 450px;
+	width: 40%;
 	height: 500px;
 }
 
@@ -364,17 +382,7 @@ section:hover{
 	left: 350px;
 }
 
-.about-image {
-	width: 450px;
-	height: 500px;
-}
 
-.about-image img {
-	height: auto;
-	width: 100%;
-	object-fit: contain;
-	object-position: center;
-}
 
 .slides-image {
 	width: 750px;
@@ -382,19 +390,28 @@ section:hover{
 }
 
 .slides-image img {
-	height: auto;
+	height: 80%;
 	width: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	object-position: center;
+	border: #fff 2px solid;
 }
 
 #slides{
 	padding: auto ;
+	margin-left: 200px;
+	align-items: center;
+	justify-content: space-between;
+	
 }
 
 /* Contact Section */
 #contact {
 	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .contact-heading {
@@ -410,13 +427,6 @@ section:hover{
 .contact-heading p {
 	color: #000000;
 	margin-bottom: 12px;
-}
-
-#contact {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	flex-direction: row;
 }
 
 
@@ -595,21 +605,13 @@ section:hover{
 	}
 }
 /* image effects*/
-img{
-	border: 2px solid #fff;
-	box-shadow: 10px 10px 5px #ccc;
-	width: 800px;
-	height: auto;
-	object-fit: contain;
-	
-}
 
 img:hover{
 	opacity: 0.8;
 }
 
 /* contact form */
-input[type=text],textarea {
+input[type=text], input[type=email],textarea {
 	width: 100%; 
 	padding: 12px; 
 	border: 1px solid #ccc;

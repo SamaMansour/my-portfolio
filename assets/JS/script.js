@@ -1,4 +1,4 @@
-var currentIndex = 1;
+var currentIndex = 1 ;
 var duration = 3000;
 
 var images = [
@@ -56,12 +56,32 @@ function slideShow (){
 	currentIndex++;
 
 	if (currentIndex == images.length){
-		currentIndex=0;
+		currentIndex= 0;
 	}
 	setTimeout(slideShow, duration);
 
 }
 
-slideShow();
+window.addEventListener("load", (event) => {
+  slideShow(); 
+});
 
- 
+function clearForm(){
+	var form = document.getElementById("contact-us");
+	form.reset();
+	
+
+}
+
+
+function checkEmailDomain(){
+	let domain = ".*\.com$";
+	var email = document.getElementById("email").value;
+	if(!email.match(domain)){
+		alert("E-mail must end with .com");
+	}
+	window.location.href = "mailto:s.jamansour@gmail.com";
+	clearForm();
+	
+}
+

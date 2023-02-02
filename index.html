@@ -40,7 +40,7 @@
 		<!-- About Section -->
 		<section id="about">
 			<div class="about-text">
-				<span>About Us</span>
+				<span>About</span>
 				<h1>Intro about me </h1>
 				<p>
 					I garduated from Princess Sumaya University for
@@ -62,31 +62,32 @@
 		<!-- Projects Section -->
 		<section id="projects">
 			<div class="projects-text">
-				<span>Some of My Projects</span>
+				<h1>Some of My Projects</h1>
+				<div id="projects-internal-text">
+					<h3>sentiment analysis</h3>
+					<p>
+						Django app associated with PSUT that fulfills graping posts from social media platforms 
+						such as twitter and classify them into correct category such as: happy, sad etc ...
+					</p>
 
-				<h3>sentiment analysis</h3>
-				<p>
-					Django app associated with PSUT that fulfills graping posts from social media platforms 
-					such as twitter and classify them into correct category such as: happy, sad etc ...
-				</p>
+					<h3>Personal portfolio</h3>
+					<p>
+						This portfolio was implemented using React js that includes a nav bar,
+						about me section, menu of projects and a contact me form
+					</p>
 
-				<h3>Personal portfolio</h3>
-				<p>
-					This portfolio was implemented using React js that includes a nav bar,
-					about me section, menu of projects and a contact me form
-				</p>
-
-				<h3>Foodi Meals </h3>
-				<p>
-					This project was written using mern stack it is a basic food delivery app
-					with shopping cart.
-				</p>
+					<h3>Foodi Meals </h3>
+					<p>
+						This project was written using mern stack it is a basic food delivery app
+						with shopping cart.
+					</p>
+				</div>
 			</div>
 			<!-- Projects Image -->
-			<div id="slides">
+			<div id="slides" class="slides-image">
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<div class="slides-image">
-					<img id="slide-img" />
+					<img id="slide-img" src= ""/>
 					<span id="img-count"></span>
 				</div>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -102,11 +103,11 @@
 					with good quality<br />
 					and the perfect ETA
 				</p>
-				<div class="container">
-					<form action="mailto:s.jamansour@gmail.com" method="post" enctype="text/plain">
-						<input type="text" name="name" placeholder="Name"><br>
-						<input type="text" name="mail" placeholder="E-mail"><br>
-						<input type="text" name="comment" size="50" placeholder="comment"><br><br>
+				<div>
+					<form action="#" id= "contact-us" method="post" enctype="text/plain" onsubmit="checkEmailDomain()">
+						<input id="name"type="text" name="name" placeholder="Name"><br>
+						<input id= "email" type="email" name="mail" placeholder="E-mail"><br>
+						<input id= "comment" type="text" name="comment" size="50" placeholder="comment"><br><br>
 						<input type="submit" value="Send">
 					</form>
 				</div>
