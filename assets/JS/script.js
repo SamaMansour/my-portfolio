@@ -67,12 +67,9 @@ window.addEventListener("load", (event) => {
 });
 
 function clearForm(){
-	var name = document.getElementById("name");
-	var email = document.getElementById("email");
-	var comment = document.getElementById("comment");
-	name.value= '';
-	email.value= '';
-	comment.value= '';
+	var form = document.getElementById("contact-us");
+	form.reset();
+	
 
 }
 
@@ -83,7 +80,8 @@ function checkEmailDomain(){
 	if(!email.match(domain)){
 		alert("E-mail must end with .com");
 	}
+	window.location.href = "mailto:s.jamansour@gmail.com";
+	clearForm();
 	
 }
 
-;
