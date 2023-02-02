@@ -388,15 +388,18 @@ section:hover{
 }
 
 .slides-image img {
-	height: auto;
+	height: 80%;
 	width: 100%;
-	object-fit: contain;
+	object-fit: cover;
 	object-position: center;
+	border: #fff 2px solid;
 }
 
 #slides{
 	padding: auto ;
 	margin-left: 200px;
+	align-items: center;
+	justify-content: space-between;
 	
 }
 
