@@ -58,8 +58,8 @@ function editPost(id){
         method: 'PUT',
         body: JSON.stringify({
           id: 1,
-          title: title,
-          body: body,
+          title: "me",
+          body: "you",
           userId: 1,
         }),
         headers: {
@@ -80,11 +80,15 @@ function scrollUp(id){
    
       document.getElementById("title").value = json.title;
       document.getElementById("body").value= json.body;
-     
+      document.getElementById("edit-button").style.display = "block";
+      document.getElementById("edit-button").addEventListener("click", editPost(json.id));
   }
 
   );
+  
 }
+
+
 
 
 
