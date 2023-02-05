@@ -42,7 +42,7 @@
 	</nav>
 	<h1>Posts CRUD</h1>
   <div class="inner-container">
-    <div class="left">
+    <div id="left">
 			<form id="form" onsubmit="createPost()">
 					<label for="post"> Write your post here</label>
 					<br><br>
@@ -53,11 +53,11 @@
 					<textarea name="post" id="body" cols="30" rows="10"></textarea>
 					<br> <br>
 					<div id="msg"></div>
-					<input type="submit" value="Post">
+					<input id="post-button" type="submit" value="Post">
 				</form>
     </div>
 		<hr>
-    <div class="right">
+    <div id="right">
 			<h3>Your posts here</h3>
   		<div id="posts">
 				

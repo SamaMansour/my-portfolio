@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function listPosts(){
 								<h4 id="post-title">${post.title}</h4>
 								<p id="post-body">${post.body}</p>
 								<span class="options">
-									<i class="fas fa-edit" onclick="editPost(${post.id})"></i>
+									<i class="fas fa-edit" onclick="scrollUp(${post.id})"></i>
 									<i class="fas fa-trash-alt" onclick="deletePost(${post.id})"></i>
 								</span>
 							</div>
@@ -51,14 +51,15 @@ function deletePost(id){
 });
 }
 
-
 function editPost(id){
+  var title = document.getElementById("title").value;
+  var body = document.getElementById("body").value;
     fetch(`http://localhost:3000/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
           id: 1,
-          title: 'foo',
-          body: 'bar',
+          title: title,
+          body: body,
           userId: 1,
         }),
         headers: {
@@ -67,6 +68,22 @@ function editPost(id){
       })
         .then((response) => response.json())
         .then((json) => console.log(json));
+}
+
+
+function scrollUp(id){
+
+  document.getElementById('left').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  fetch(`http://localhost:3000/posts/${id}`)
+  .then((response) => response.json())
+  .then((json) => {console.log(json);
+   
+      document.getElementById("title").value = json.title;
+      document.getElementById("body").value= json.body;
+     
+  }
+
+  );
 }
 
 
