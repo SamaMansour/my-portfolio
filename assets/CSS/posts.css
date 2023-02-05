@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .inner-container {
+    display: flex;
+    gap: 50px;
+    margin: 0 50px;
+  }
+
+
+  #posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+#post{
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
