@@ -1,8 +1,6 @@
-
 function createPost(){
-  var title = document.getElementById("title").value;
-  var body = document.getElementById("body").value;
-  
+  let title = document.getElementById("title").value;
+  let body = document.getElementById("body").value;
   fetch('http://localhost:3000/posts/', {
   method: 'POST',
   body: JSON.stringify({
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function listPosts(){
 						var output = "";
             json.forEach(function(post){
 							output += `
-							<div id="post">
+							<div id="post" class= "shadow">
 								<h4 id="post-title">${post.title}</h4>
 								<p id="post-body">${post.body}</p>
 								<span class="options">
@@ -52,14 +50,14 @@ function deletePost(id){
 }
 
 function editPost(id){
-  var title = document.getElementById("title").value;
-  var body = document.getElementById("body").value;
+  var title1 = document.getElementById("title").value;
+  var body1 = document.getElementById("body").value;
     fetch(`http://localhost:3000/posts/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
-          id: 1,
-          title: "me",
-          body: "you",
+          id: id,
+          title: title1,
+          body: body1,
           userId: 1,
         }),
         headers: {

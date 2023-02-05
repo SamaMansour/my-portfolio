@@ -35,12 +35,13 @@
 		<div class="toggle" onclick="toggleMenu();"></div>
 		<ul class="menu">
 			<li><a href="#" onclick="toggleMenu();">Home</a></li>
-			<li><a href="#about" onclick="toggleMenu();">About</a></li>
-			<li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-			<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+			<li><a href="./index.html/#about" >About</a></li>
+			<li><a href="./index.html/#projects">Projects</a></li>
+			<li><a href="./index.html/#contact">Contact</a></li>
+			<li><a href="#posts" onclick="toggleMenu();">Posts</a></li>
 		</ul>
 	</nav>
-	<h1>Posts CRUD</h1>
+	<h1 id="posts-header">Posts CRUD</h1>
   <div class="inner-container">
     <div id="left">
 			<form id="form" onsubmit="createPost()">
@@ -55,6 +56,8 @@
 					<br> <br>
 					<div id="msg"></div>
 					<input id="post-button" type="submit" value="Post">
+					<br>
+					<br>
 					<input id="edit-button" type="button" value="Edit" >
 				</div>
 			</form>

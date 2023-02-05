@@ -38,6 +38,10 @@ p{
 	justify-content: left;
 }
 
+#posts-header{
+	margin-left: 2%;
+}
+
 nav {
 	position: fixed;
 	top: 0;
@@ -623,7 +627,7 @@ input[type=text], input[type=email],textarea {
 }
 
 
-input[type=submit] {
+input[type=submit], input[type= button] {
 	padding: 12px 22px;
 	border: none;
 	background: #B33C86;
