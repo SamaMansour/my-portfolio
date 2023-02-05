@@ -1,12 +1,12 @@
 body {
     font-family: sans-serif;
-  }
+}
   
 .inner-container {
   display: flex;
   gap: 50px;
   margin: 0 50px;
-  }
+}
 
 
 #posts{
@@ -28,7 +28,7 @@ body {
   box-shadow: inset 0 -3em 3em rgba(7, 3, 3, 0.1),
               0 0  0 2px rgb(237, 226, 226),
               0.3em 0.3em 1em rgba(0,0,0,0.3);
- }
+}
  
 
 #edit-button{
