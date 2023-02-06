@@ -33,8 +33,25 @@ body {
 
 #edit-button{
   display: none;
+
 }
 
 #left{
   margin-top: 20px;
+}
+
+#right{
+  margin-top: 20px;
+}
+
+.buttons {
+  width: 100px;
+  margin: 0 auto;
+  display: inline
+}
+  
+  .action_btn {
+  width: 100px;
+  margin: 0 200;
+  display: inline;
 }

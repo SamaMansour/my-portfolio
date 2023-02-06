@@ -19,5 +19,8 @@
   "dependencies": {
     "json": "^11.0.0",
     "server": "^1.0.38"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0"
   }
 }
