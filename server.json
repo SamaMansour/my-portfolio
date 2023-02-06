@@ -5,6 +5,28 @@
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
       "body": "0sskjhkjdfddfs",
       "userId": 1
+    },
+    {
+      "title": "qui est esse",
+      "body": "est rerum tempore vitae\\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\\nfugiat blanditiis",
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "id": 27,
+      "title": "Post3",
+      "body": "This the body of post 3 where you can write whatever you want and whatever we want ",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "id": 29,
+      "title": "gfgf",
+      "body": "fgf",
+      "userId": 1
     }
   ],
   "comments": [],

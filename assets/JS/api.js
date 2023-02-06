@@ -51,14 +51,14 @@ function deletePost(id){
 }
 
 function editPost(id){
-	let title1 =  document.getElementById('title').value;
-	let body1 = document.getElementById('body').value;
+	let title =  document.getElementById('title').value;
+	let body = document.getElementById('body').value;
 	fetch(`http://localhost:3000/posts/${id}`, {
 		method: 'PUT',
 		body: JSON.stringify({
 			id: id,
-			title: title1,
-			body: body1,
+			title: title,
+			body: body,
 			userId: 1,
 		}),
 		headers: {
