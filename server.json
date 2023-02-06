@@ -1,28 +1,10 @@
 {
   "posts": [
     {
-      "id": 21,
-      "title": "jo",
-      "body": "jo",
-      "userId": 1
-    },
-    {
-      "id": 22,
-      "title": "goo",
-      "body": "doo",
-      "userId": 1
-    },
-    {
-      "id": 24,
+      "id": 25,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto",
+      "body": "0sskjhkjdfddfs",
       "userId": 1
-    },
-    {
-      "title": "pooo",
-      "body": "moookkkkkk",
-      "userId": 1,
-      "id": 25
     }
   ],
   "comments": [],

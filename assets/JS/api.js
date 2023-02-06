@@ -47,15 +47,18 @@ function deletePost(id){
 	fetch(`http://localhost:3000/posts/${id}`, {
 		method: 'DELETE',
 	});
+	return confirm('Are you sure you want to delete?');
 }
 
 function editPost(id){
+	let title1 =  document.getElementById('title').value;
+	let body1 = document.getElementById('body').value;
 	fetch(`http://localhost:3000/posts/${id}`, {
 		method: 'PUT',
 		body: JSON.stringify({
 			id: id,
-			title: document.getElementById('title').value,
-			body: document.getElementById('body').value,
+			title: title1,
+			body: body1,
 			userId: 1,
 		}),
 		headers: {
@@ -76,9 +79,13 @@ function scrollUp(id){
    
 			document.getElementById('title').value = json.title;
 			document.getElementById('body').value= json.body;
-			document.getElementById('edit-button').style.display = 'block';
-      
-
+			var output = '';
+			output += `
+				<input class= "action_btn" id="edit-button" type="button" value="Edit" onclick="editPost(${json.id})" >
+			
+			`;
+			document.getElementById('edit-area').innerHTML = output;
+			
 
 		}
 
